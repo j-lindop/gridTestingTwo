@@ -9,8 +9,11 @@ $lg: 980px;
 $xl: 1300px; 
 
 .container {
+	/*
 	width: 499px;
 	max-width:  100%;
+	*/
+	width: 100%;
 	margin:  20px auto;
 	padding:  0 20px;
 
@@ -52,6 +55,8 @@ $xl: 1300px;
 	gap: 20px;
 }
 
+// two column variations 
+
 .grid-1-2 {
 	display: grid; 
 	grid-template-columns: 1fr 2fr; 
@@ -78,15 +83,59 @@ $xl: 1300px;
 
 @media (min-width:  $md) {
 
+	.md-grid-2 {
+		display: grid; 
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px; 
+	}
+
 	.md-grid-3 {
 		display:  grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 20px;
 	}
 
+// two column variations 
+
+	.md-grid-1-2 {
+		display: grid;
+		grid-template-columns: 1fr 2fr; 
+		gap: 20px; 
+	}
+
+	.md-grid-1-3 {
+		display: grid; 
+		grid-template-columns: 1fr 3fr; 
+		gap: 20px;
+	}
+
+	.md-grid-2-1 {
+		display: grid;
+		grid-template-columns: 2fr 1fr; 
+		gap: 20px; 
+	}
+
+	.md-grid-3-1 {
+		display: grid;
+		grid-template-columns: 3fr 1fr; 
+		gap: 20px; 
+	}
+
 }
 
 @media (min-width:  $lg) {
+
+	.lg-grid-2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+
+	.lg-grid-3 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr); 
+		gap: 20px;
+	}
 
 	.lg-grid-4 {
 		display:  grid;
@@ -94,8 +143,33 @@ $xl: 1300px;
 		gap: 20px;
 	}
 
-}
+	// two column variations 
 
+	.lg-grid-1-2 {
+		display: grid;
+		grid-template-columns: 1fr 2fr; 
+		gap: 20px;
+	}
+
+	.lg-grid-1-3 {
+		display: grid;
+		grid-template-columns: 1fr 3fr; 
+		gap: 20px; 
+	}
+
+	.lg-grid-2-1 {
+		display: grid; 
+		grid-template-columns: 2fr 1fr; 
+		gap: 20px; 
+	}
+
+	.lg-grid-3-1 {
+		display: grid; 
+		grid-template-columns: 3fr 1fr; 
+		gap: 20px;
+	}
+	
+}
 @media (min-width: $xl) {
 	
 	.xl-grid-2 {
@@ -104,32 +178,89 @@ $xl: 1300px;
 		gap:  20px;
 	}
 
+	.xl-grid-3 {
+		display: grid; 
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px; 
+	}
+
+	// two column variations 
+
+	.xl-grid-1-2 {
+		display: grid; 
+		grid-template-columns: 1fr 2fr; 
+		gap: 20px; 
+	}
+
+	.xl-grid-1-3 {
+		display: grid; 
+		grid-template-columns: 1fr 3fr; 
+		gap: 20px; 
+	}
+
+	.xl-grid-2-1 {
+		display: grid; 
+		grid-template-columns: 2fr 1fr; 
+		gap: 20px; 
+	}
+
+	.xl-grid-3-1 {
+		display: grid; 
+		grid-template-columns: 3fr 1fr; 
+		gap: 20px; 
+	}
+
 }
 
 // FLEXBOX 
 
-.flex-2 {
+.flex-2-px {
 	display: flex;
 	justify-content: space-between;
 	width: 140px;
 	margin: 0 auto;
+	padding: 10px; 
 }
 
-.flex-3 {
+.flex-2-pct {
+	display: flex; 
+	justify-content: space-between; 
+	width: 100%; 
+	min-width: 140px;
+	margin: 0 auto; 
+	padding: 10px;
+}
+
+.flex-3-px {
 	display: flex; 
 	justify-content: space-between;
 	width: 220px; 
 	margin: 0 auto; 
 }
 
-.flex-4 {
+.flex-3-pct {
+	display: flex;
+	justify-content: space-between; 
+	width: 100%; 
+	min-width: 220px;
+	margin: 0 auto; 
+}
+
+.flex-4-px {
 	display: flex;
 	justify-content: space-between;
 	width: 300px;
 	margin: 0 auto;
 }
 
-.flex-6 {
+.flex-5-px {
+	display: flex;
+	justify-content: space-between; 
+	width: 380px;
+	margin: 0 auto;
+}
+
+.flex-6-px {
 	display: flex;
 	justify-content: space-between;
 	width: 460px;
@@ -226,19 +357,27 @@ $color-lime: #01ff70;
 
 // padding f
 
+.p-5 {
+	padding: 5px; 
+}
+
+.p-10 {
+	padding: 10px; 
+}
+
 .p-20 {
 	padding: 20px;
 }
 
 // borders 
 
-.border-4px {
+.testBorder1 {
 	background-color: white;
 	border: 4px solid #ee6d2d; 
 }
 
 
-.border-1px {
+.testBorder2 {
 	background-color: white;
-	border: 1px solid #ee6d2d; 
+	border: 1px solid green; 
 }
