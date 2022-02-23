@@ -5,25 +5,28 @@
 }
 
 .container {
-  width: 500px;
+  width: 499px;
   max-width: 100%;
   margin: 20px auto;
   padding: 0 20px;
 }
 @media (min-width: 500px) {
   .container {
-    width: 500px;
+    width: 100%;
+    min-width: 500px;
   }
 }
 @media (min-width: 980px) {
   .container {
-    width: 980px;
+    width: 100%;
+    min-width: 980px;
     padding: 0 180px;
   }
 }
 @media (min-width: 1300px) {
   .container {
-    width: 1300px;
+    width: 100%;
+    min-width: 1300px;
     padding: 0 180px;
   }
 }

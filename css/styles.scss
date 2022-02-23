@@ -9,22 +9,25 @@ $lg: 980px;
 $xl: 1300px; 
 
 .container {
-	width: 500px;
+	width: 499px;
 	max-width:  100%;
 	margin:  20px auto;
 	padding:  0 20px;
 
 	@media (min-width: $md) {
-		width:  $md;
+		width: 100%;
+		min-width:  $md;
 	}
 
 	@media (min-width:  $lg) {
-		width:  $lg;
+		width: 100%;
+		min-width:  $lg;
 		padding:  0 180px;
 	}
 	
 	@media (min-width:  $xl) {
-		width:  $xl;
+		width: 100%;
+		min-width:  $xl;
 		padding:  0 180px;
 	}
 
